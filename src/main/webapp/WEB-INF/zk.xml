@@ -45,6 +45,6 @@
 
 	<library-property>
     	<name>org.zkoss.web.preferred.locale</name>
-    	<value>es</value>
+    	<value>en</value>
 	</library-property>
 </zk>
