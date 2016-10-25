@@ -6,7 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.ComponentScan;
 
 @EnableAutoConfiguration
-@ComponentScan("com.simon.zk.controllers")
+@ComponentScan("com.simon")
 public class Application {
     public static void main(String args[]) {
         new SpringApplicationBuilder().sources(Application.class).bannerMode(Banner.Mode.OFF).run();

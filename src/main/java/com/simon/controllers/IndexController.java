@@ -1,4 +1,4 @@
-package com.simon.zk.controllers;
+package com.simon.controllers;
 
 import org.zkoss.bind.annotation.Init;
 import org.zkoss.zk.ui.select.annotation.VariableResolver;
@@ -16,8 +16,8 @@ class IndexController {
     String message;
 
     @Init
-    String init() {
+    void init() {
         message = simpleBean.echo("Hello World!");
-        return message;
+
     }
 }

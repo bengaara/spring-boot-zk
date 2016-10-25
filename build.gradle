@@ -26,7 +26,8 @@ configurations {
 }
 
 dependencies {
-    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-web" 
+    compile "org.springframework.boot:spring-boot-starter-security"
     compile "org.zkoss.zk:zkplus:8.0.0"
     compile "org.zkoss.zk:zkbind:8.0.0"
     compile "org.zkoss.zk:zkspring-core:3.0"
