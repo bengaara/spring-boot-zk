@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language-addon>
+    <addon-name>comtest</addon-name>
+    <language-name>xul/html</language-name>
+    <!-- <javascript src="/js/zkoss-override.js" charset="UTF-8" /> -->
+
+   <!--  <stylesheet href="/css/zkoss-override.css" type="text/css" />-->
+
+   <!--  <javascript package="com.simon" />-->
+
+   <component><extends>button</extends>
+	  <component-name>TestPanel</component-name>
+	  <component-class>com.simon.components.TestPanel</component-class>
+	</component>
+
+</language-addon>

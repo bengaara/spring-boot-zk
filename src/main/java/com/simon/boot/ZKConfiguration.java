@@ -6,22 +6,12 @@ import java.util.Map;
 import org.springframework.boot.context.embedded.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.zkoss.zk.au.http.DHtmlUpdateServlet;
 import org.zkoss.zk.ui.http.DHtmlLayoutServlet;
 import org.zkoss.zk.ui.http.HttpSessionListener;
 
 @Configuration
 public class ZKConfiguration {
-    /*
-     * plain URL...
-     */
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "hi!";
-    }
 
     /*
      * ZK servlets

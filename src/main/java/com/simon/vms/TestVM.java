@@ -1,4 +1,4 @@
-package com.simon.controllers;
+package com.simon.vms;
 
 import org.zkoss.bind.annotation.Command;
 import org.zkoss.bind.annotation.NotifyChange;
@@ -11,14 +11,14 @@ import com.simon.services.TestService;
 @VariableResolver(DelegatingVariableResolver.class)
 public class TestVM {
 
-    private String name = "pepe";
+    private String name = "oto";
 
     @WireVariable
     TestService testService;
 
     @Command
     @NotifyChange("name")
-    public void ook() {
+    public void push() {
         name = testService.getName();
     }
 

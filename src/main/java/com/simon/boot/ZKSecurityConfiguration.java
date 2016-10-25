@@ -15,12 +15,12 @@ public class ZKSecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.sessionManagement().sessionFixation().none();
         http.authorizeRequests()
-                .antMatchers("/zkau*", // <--- for zk ajax (internal)
+                .antMatchers("/zkau*", "/zkau/**", // <--- for zk ajax (internal)
                         "/login*", "/logout", // <--- for login/logout
                         "/js/**", // <--- static resources...
-                        "/css/**", "/bootstrap/**", "/img/**", "/static/**")
+                        "/css/**", "/bootstrap/**", "/img/**", "/static/**", "/*")
                 .permitAll().anyRequest().authenticated().and().headers().frameOptions().disable().and().formLogin().permitAll()
-                .defaultSuccessUrl("/testVM.zul", true).and() // this redirect allways to testVM.zul page
+                .defaultSuccessUrl("/home/testVM.zul", true).and() // this redirect allways to testVM.zul page
                 .logout().permitAll().and().csrf().disable();
     }
 

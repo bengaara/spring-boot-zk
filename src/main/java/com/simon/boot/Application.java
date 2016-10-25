@@ -12,3 +12,5 @@ public class Application {
         new SpringApplicationBuilder().sources(Application.class).bannerMode(Banner.Mode.OFF).run();
     }
 }
+
+// https://www.zkoss.org/wiki/Small_Talks/2012/November/Integrate_ZK_with_Spring_MVC_3

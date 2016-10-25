@@ -3,7 +3,7 @@
 <zk>
 	<preference>
 		<name>org.zkoss.zk.ui.WebApp.name</name>
-		<value>zk boot</value>
+		<value>zk-boot</value>
 	</preference>
 	
 	<preference>
@@ -47,4 +47,8 @@
     	<name>org.zkoss.web.preferred.locale</name>
     	<value>en</value>
 	</library-property>
+	
+	<language-config>
+		<addon-uri>/WEB-INF/lang-addon.xml</addon-uri>
+	</language-config> 
 </zk>
