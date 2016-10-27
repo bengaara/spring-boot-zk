@@ -1,4 +1,4 @@
-group 'com.bzk'
+group 'spring-boot-zk'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -37,4 +37,8 @@ dependencies {
 
 bootRun {
     addResources = true
+}
+jar {
+    baseName = 'spring-boot-zk'
+    version =  '0.1.0'
 }
